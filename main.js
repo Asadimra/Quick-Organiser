@@ -18,17 +18,5 @@ while (condition) {
     ]);
     todos.push(askadd.add);
     condition = askadd.addMore;
-    //console.log(todos);
-    let dcut = await inquirer.prompt([
-        {
-            name: "delete",
-            type: "confirm",
-            message: "Do you delete this item",
-            default: "false",
-        },
-    ]);
-    if (dcut.delete == true) {
-        todos.pop();
-    }
     console.log(todos);
 }
