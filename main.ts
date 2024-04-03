@@ -39,10 +39,10 @@ let question = await inquirer.prompt([
     name: "questionask",
     type: "list",
     message: "Select one of this:",
-    choices: ["Read your todos", "Adding in your todos"],//READ YOUR TODO AND ADD SOMETHING IN YOUR TODO
+    choices: ["Review your todos", "Adding in your todos"],//READ YOUR TODO AND ADD SOMETHING IN YOUR TODO
   },
 ]);
-if (question.questionask == "Read your todos") {
+if (question.questionask == "Review your todos") {
  
     console.log("Your todos list is this:"+(todos));
   }
